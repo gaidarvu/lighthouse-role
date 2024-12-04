@@ -1,4 +1,8 @@
 ---
+- name: Include Nginx role
+  include_role:
+    name: nginx
+
 - name: Clone Repo
   git:
     repo: "https://github.com/VKCOM/lighthouse"
